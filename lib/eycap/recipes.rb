@@ -1,20 +1,20 @@
-require 'eycap/lib/ey_logger'
-require 'eycap/lib/ey_logger_hooks'
-require 'eycap/recipes/database'
+require File.expand_path(File.dirname(__FILE__) + '/lib/ey_logger')
+require File.expand_path(File.dirname(__FILE__) + '/lib/ey_logger_hooks')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/database')
 # require 'eycap/recipes/ferret'
-require 'eycap/recipes/mongrel'
-require 'eycap/recipes/nginx'
-require 'eycap/recipes/slice'
-require 'eycap/recipes/deploy'
-require 'eycap/recipes/sphinx'
-require 'eycap/recipes/backgroundrb'
-require 'eycap/recipes/memcached'
+require File.expand_path(File.dirname(__FILE__) + '/recipes/mongrel')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/nginx')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/slice')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/deploy')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/sphinx')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/backgroundrb')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/memcached')
 # require 'eycap/recipes/solr'
-require 'eycap/recipes/monit'
+require File.expand_path(File.dirname(__FILE__) + '/recipes/monit')
 # require 'eycap/recipes/tomcat'
 # require 'eycap/recipes/juggernaut'
-require 'eycap/recipes/passenger'
-require 'eycap/recipes/apache'
+require File.expand_path(File.dirname(__FILE__) + '/recipes/passenger')
+require File.expand_path(File.dirname(__FILE__) + '/recipes/apache')
 
 Capistrano::Configuration.instance(:must_exist).load do
   

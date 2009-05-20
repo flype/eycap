@@ -1,4 +1,4 @@
-Capistrano::Configuration.instance(:must_exist).load do
+tCapistrano::Configuration.instance(:must_exist).load do
 
   namespace :sphinx do
     desc "After update_code you want to configure, then reindex"
